@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2021-01-19 20:21:53</change_date>
+        <changed_by display_value="">abhijith.mergu@snc</changed_by>
+        <content display_value="Capacity Limits">07b2309c93c13200bebe7344967ffba9</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 20:21:53</sys_created_on>
+        <sys_id>03fbd53ddbf5a410f69e1dcd139619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2021-01-19 20:21:53</sys_name>
+        <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name>gsw_change_log_03fbd53ddbf5a410f69e1dcd139619cc</sys_update_name>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:21:53</sys_updated_on>
+        <type>4</type>
+    </gsw_change_log>
+</record_update>

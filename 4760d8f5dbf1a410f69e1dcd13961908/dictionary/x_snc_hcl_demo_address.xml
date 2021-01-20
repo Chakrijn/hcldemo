@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Address" max_length="40" name="x_snc_hcl_demo_address" type="collection">
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Country" mandatory="true" max_length="40" name="country" type="string"/>
+        <element label="Fax" max_length="50" name="fax" type="string"/>
+        <element label="Lines" max_length="1024" name="lines" type="string"/>
+        <element label="Name" mandatory="true" max_length="128" name="name" type="string"/>
+        <element label="Phone" max_length="50" name="phone" type="string"/>
+        <element label="Postal Code" max_length="40" name="postal_code" type="string"/>
+        <element choice="3" default="created" label="Record Source" max_length="40" name="record_source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Created" value="created"/>
+                <element inactive_on_update="false" label="Imported" value="imported"/>
+            </choice>
+        </element>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element label="Unique Name" mandatory="true" max_length="50" name="unique_name" type="string"/>
+    </element>
+</database>

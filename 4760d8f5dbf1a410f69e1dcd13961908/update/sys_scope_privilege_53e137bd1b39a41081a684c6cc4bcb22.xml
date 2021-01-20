@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>create</operation>
+        <source_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-20 07:17:36</sys_created_on>
+        <sys_id>53e137bd1b39a41081a684c6cc4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_sap_ariba_spoke_address</sys_name>
+        <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name>sys_scope_privilege_53e137bd1b39a41081a684c6cc4bcb22</sys_update_name>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-20 07:17:36</sys_updated_on>
+        <target_name>sn_sap_ariba_spoke_address</target_name>
+        <target_scope display_value="SAP Ariba Spoke">7206c5341b130c508785eb99bc4bcb11</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

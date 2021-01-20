@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-paris-06-24-2020__patch4-11-25-2020</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_address_zip</internal_name>
+        <label_cache>[{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.fax","label":"3➛Address Record➛Fax","reference":"","reference_display":"Fax","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"fax"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.phone","label":"3➛Address Record➛Phone","reference":"","reference_display":"Phone","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"phone"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.postal_code","label":"3➛Address Record➛Postal Code","reference":"","reference_display":"Postal Code","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"postal_code"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.country","label":"3➛Address Record➛Country","reference":"","reference_display":"Country","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"country"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.state","label":"3➛Address Record➛State","reference":"","reference_display":"State","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"state"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.city","label":"3➛Address Record➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"city"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.lines","label":"3➛Address Record➛Lines","reference":"","reference_display":"Lines","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"lines"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.unique_name","label":"3➛Address Record➛Unique Name","reference":"","reference_display":"Unique Name","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"unique_name"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.name","label":"3➛Address Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"name"},{"name":"c15b4a3a-f362-4a5d-b16f-bdb553624372.file_line","label":"4➛File Line","reference":"sn_utility_spoke_file_line","reference_display":"File Line","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"277c904f-4ac6-4fc8-b9d4-4d59e73bf9b2"}},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item","label":"3➛Address Record","reference":"x_snc_hcl_demo_address","reference_display":"Address","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e0b528d0-0163-4560-963a-293f193cec64.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e0b528d0-0163-4560-963a-293f193cec64.Table","label":"2➛Address Table","reference":"x_snc_hcl_demo_address","reference_display":"Address","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e0b528d0-0163-4560-963a-293f193cec64.Records","label":"2➛Address Records","reference":"x_snc_hcl_demo_address","reference_display":"Address","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c2de104-8508-4dd0-879c-069d32df50e7.file","label":"1➛File","reference":"sn_utility_spoke_file","reference_display":"File","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"191a1553-dd8a-48aa-8242-b960d789516a"}},{"name":"1cc770da-52ff-4da6-ac4b-7bd1f32934fa.file_attachment_id","label":"5➛File Attachment ID","reference_display":"File Attachment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e25bc0f5-2759-4f15-b476-94f3722d938b"}},{"name":"1cc770da-52ff-4da6-ac4b-7bd1f32934fa.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"18982989-7896-40d2-b051-1b188d9f7542"}},{"name":"1cc770da-52ff-4da6-ac4b-7bd1f32934fa.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5eea177a-8d19-4a66-adfa-5c2c95c6094b"}},{"name":"d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file","label":"6➛Zip File","reference":"sn_utility_spoke_file_set","reference_display":"File Set","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c111f96f-ee04-42c7-8fde-a7e4c5b9d742"}},{"name":"1c1c8bde-290a-4e80-8b16-87a0370ba64e.zip_sys_id","label":"8➛Zip Attachment Sys ID","reference_display":"Zip Attachment Sys ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6e3ba717-6ac4-4692-856e-658e45d2e75f"}},{"name":"1c1c8bde-290a-4e80-8b16-87a0370ba64e.status","label":"8➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"86620c20-8215-4496-ae7c-4c8368f09487"}},{"name":"1c1c8bde-290a-4e80-8b16-87a0370ba64e.error_message","label":"8➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"907ab522-66d6-4435-9607-765998e279d2"}}]</label_cache>
+        <latest_snapshot>e23e19fddbf5a410f69e1dcd1396195b</latest_snapshot>
+        <master_snapshot>4d0c34f9db75a410f69e1dcd13961975</master_snapshot>
+        <name>Create Address Zip</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:46:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36587cf5db75a410f69e1dcd13961972</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Create Address Zip</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name>sys_hub_flow_36587cf5db75a410f69e1dcd13961972</sys_update_name>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:06</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=36587cf5db75a410f69e1dcd13961972"/>
+    <sys_variable_value action="delete_multiple" query="document_key=36587cf5db75a410f69e1dcd13961972"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=36587cf5db75a410f69e1dcd13961972^sys_idNOT IN04eb30f9db75a410f69e1dcd139619a6,08eb30f9db75a410f69e1dcd139619c6,7bdaf0b9db75a410f69e1dcd13961926,84eb30f9db75a410f69e1dcd139619d3,88eaf0b9db75a410f69e1dcd13961934,8c4cf8f9db75a410f69e1dcd139619db,bbdaf0b9db75a410f69e1dcd13961929,cceb30f9db75a410f69e1dcd1396199e,fbdaf0b9db75a410f69e1dcd1396191d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Begin Zip">c1993d960f9550107b75001ea8767ebd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>c1993d960f9550107b75001ea8767ebd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>04eb30f9db75a410f69e1dcd139619a6</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=04eb30f9db75a410f69e1dcd139619a6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>04eb30f9db75a410f69e1dcd139619a6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>88eb30f9db75a410f69e1dcd139619a7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:13:53</sys_updated_on>
+        <value>Address.zip</value>
+        <variable display_value="">05993d960f9550107b75001ea8767ebe</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Add File to Zip">ed77ca5e0f9550107b75001ea8767ec3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ed77ca5e0f9550107b75001ea8767ec3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>08eb30f9db75a410f69e1dcd139619c6</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>2c7fd8ea-8355-4afa-b482-ecfa07c6731a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08eb30f9db75a410f69e1dcd139619c6"/>
+    <sys_element_mapping action="delete_multiple" query="id=08eb30f9db75a410f69e1dcd139619c6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>08eb30f9db75a410f69e1dcd139619c6</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>40eb30f9db75a410f69e1dcd139619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:01:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ed77ca5e0f9550107b75001ea8767ec3</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zip_file</field>
+        <id>08eb30f9db75a410f69e1dcd139619c6</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>8ceb30f9db75a410f69e1dcd139619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:01:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ed77ca5e0f9550107b75001ea8767ec3</table>
+        <value>{{d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>7bdaf0b9db75a410f69e1dcd13961926</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>e0b528d0-0163-4560-963a-293f193cec64</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7bdaf0b9db75a410f69e1dcd13961926"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7bdaf0b9db75a410f69e1dcd13961926</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>f7daf0b9db75a410f69e1dcd13961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <value>x_snc_hcl_demo_address</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Build Zip">2146312a0f9950107b75001ea8767ea3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2146312a0f9950107b75001ea8767ea3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>84eb30f9db75a410f69e1dcd139619d3</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:48</sys_updated_on>
+        <ui_id>1c1c8bde-290a-4e80-8b16-87a0370ba64e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=84eb30f9db75a410f69e1dcd139619d3"/>
+    <sys_element_mapping action="delete_multiple" query="id=84eb30f9db75a410f69e1dcd139619d3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zip_file</field>
+        <id>84eb30f9db75a410f69e1dcd139619d3</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>88eb30f9db75a410f69e1dcd139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:01:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2146312a0f9950107b75001ea8767ea3</table>
+        <value>{{d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Append to Delimited File">368972860f5150107b75001ea8767ebc</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>368972860f5150107b75001ea8767ebc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>4</order>
+        <parent_ui_id>e900994d-27a6-4873-8c22-9795e5ed7d5d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>88eaf0b9db75a410f69e1dcd13961934</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>c15b4a3a-f362-4a5d-b16f-bdb553624372</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=88eaf0b9db75a410f69e1dcd13961934"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>88eaf0b9db75a410f69e1dcd13961934</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>88eaf0b9db75a410f69e1dcd13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:14</sys_updated_on>
+        <value>557a6aed1b39641081a684c6cc4bcbfb</value>
+        <variable display_value="">3e8972860f5150107b75001ea8767ec3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=88eaf0b9db75a410f69e1dcd13961934"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>88eaf0b9db75a410f69e1dcd13961934</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>08eaf0b9db75a410f69e1dcd13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value>Name={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.name}}^UniqueName={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.unique_name}}^Lines={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.lines}}^City={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.city}}^State={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.state}}^Country={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.country}}^PostalCode={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.postal_code}}^Phone={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.phone}}^Fax={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.fax}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>88eaf0b9db75a410f69e1dcd13961934</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>44eaf0b9db75a410f69e1dcd13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>schema</field>
+        <id>88eaf0b9db75a410f69e1dcd13961934</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>80eaf0b9db75a410f69e1dcd13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c44cf8f9db75a410f69e1dcd139619db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>attachment_id</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:03:14</sys_created_on>
+        <sys_id>8c4cf8f9db75a410f69e1dcd139619db</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:06</sys_updated_on>
+        <ui_id>ed1f7858-d257-4a93-9f1b-782abc72e2ef</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8c4cf8f9db75a410f69e1dcd139619db"/>
+    <sys_element_mapping action="delete_multiple" query="id=8c4cf8f9db75a410f69e1dcd139619db"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>8c4cf8f9db75a410f69e1dcd139619db</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:03:14</sys_created_on>
+        <sys_id>c44cf8f9db75a410f69e1dcd139619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:03:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_36587cf5db75a410f69e1dcd13961972</table>
+        <value>{{1c1c8bde-290a-4e80-8b16-87a0370ba64e.zip_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7fdaf0b9db75a410f69e1dcd13961928</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>bbdaf0b9db75a410f69e1dcd13961929</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:06</sys_updated_on>
+        <ui_id>e900994d-27a6-4873-8c22-9795e5ed7d5d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bbdaf0b9db75a410f69e1dcd13961929"/>
+    <sys_element_mapping action="delete_multiple" query="id=bbdaf0b9db75a410f69e1dcd13961929"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>bbdaf0b9db75a410f69e1dcd13961929</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>cceaf0b9db75a410f69e1dcd1396192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{e0b528d0-0163-4560-963a-293f193cec64.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Build File">25444bca0f5150107b75001ea8767efe</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>25444bca0f5150107b75001ea8767efe</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>cceb30f9db75a410f69e1dcd1396199e</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>1cc770da-52ff-4da6-ac4b-7bd1f32934fa</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cceb30f9db75a410f69e1dcd1396199e"/>
+    <sys_element_mapping action="delete_multiple" query="id=cceb30f9db75a410f69e1dcd1396199e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>cceb30f9db75a410f69e1dcd1396199e</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>c0eb30f9db75a410f69e1dcd139619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:01:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_25444bca0f5150107b75001ea8767efe</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Begin File">19d0b0060f1150107b75001ea8767ec6</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>19d0b0060f1150107b75001ea8767ec6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>fbdaf0b9db75a410f69e1dcd1396191d</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>5c2de104-8508-4dd0-879c-069d32df50e7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fbdaf0b9db75a410f69e1dcd1396191d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbdaf0b9db75a410f69e1dcd1396191d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>7fdaf0b9db75a410f69e1dcd13961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <value>Address.csv</value>
+        <variable display_value="">59d0b0060f1150107b75001ea8767ec7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbdaf0b9db75a410f69e1dcd1396191d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>bbdaf0b9db75a410f69e1dcd13961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <value>557a6aed1b39641081a684c6cc4bcbfb</value>
+        <variable display_value="">59d0b0060f1150107b75001ea8767ed6</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=36587cf5db75a410f69e1dcd13961972^sys_idNOT INf6587cf5db75a410f69e1dcd13961973"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>36587cf5db75a410f69e1dcd13961972</id>
+        <name>Create Address Zip</name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:46:13</sys_created_on>
+        <sys_id>f6587cf5db75a410f69e1dcd13961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:46:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_output action="delete_multiple" query="model=36587cf5db75a410f69e1dcd13961972^sys_idNOT INbbdab0b9db75a410f69e1dcd139619f2"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3010b47f-dd17-418f-b4d9-66dcf27ba3e9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Zip Attachment ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</model>
+        <model_id>36587cf5db75a410f69e1dcd13961972</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_36587cf5db75a410f69e1dcd13961972</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>bbdab0b9db75a410f69e1dcd139619f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=36587cf5db75a410f69e1dcd13961972^sys_idNOT IN04eb30f9db75a410f69e1dcd139619a6,08eb30f9db75a410f69e1dcd139619c6,7bdaf0b9db75a410f69e1dcd13961926,84eb30f9db75a410f69e1dcd139619d3,88eaf0b9db75a410f69e1dcd13961934,cceb30f9db75a410f69e1dcd1396199e,fbdaf0b9db75a410f69e1dcd1396191d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Begin Zip">c1993d960f9550107b75001ea8767ebd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>c1993d960f9550107b75001ea8767ebd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>04eb30f9db75a410f69e1dcd139619a6</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=04eb30f9db75a410f69e1dcd139619a6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>04eb30f9db75a410f69e1dcd139619a6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>88eb30f9db75a410f69e1dcd139619a7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:13:53</sys_updated_on>
+        <value>Address.zip</value>
+        <variable display_value="">05993d960f9550107b75001ea8767ebe</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Add File to Zip">ed77ca5e0f9550107b75001ea8767ec3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ed77ca5e0f9550107b75001ea8767ec3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>08eb30f9db75a410f69e1dcd139619c6</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>2c7fd8ea-8355-4afa-b482-ecfa07c6731a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08eb30f9db75a410f69e1dcd139619c6"/>
+    <sys_element_mapping action="delete_multiple" query="id=08eb30f9db75a410f69e1dcd139619c6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>08eb30f9db75a410f69e1dcd139619c6</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>40eb30f9db75a410f69e1dcd139619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:01:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ed77ca5e0f9550107b75001ea8767ec3</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zip_file</field>
+        <id>08eb30f9db75a410f69e1dcd139619c6</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>8ceb30f9db75a410f69e1dcd139619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:01:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ed77ca5e0f9550107b75001ea8767ec3</table>
+        <value>{{d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>7bdaf0b9db75a410f69e1dcd13961926</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>e0b528d0-0163-4560-963a-293f193cec64</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7bdaf0b9db75a410f69e1dcd13961926"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7bdaf0b9db75a410f69e1dcd13961926</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>f7daf0b9db75a410f69e1dcd13961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <value>x_snc_hcl_demo_address</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Build Zip">2146312a0f9950107b75001ea8767ea3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2146312a0f9950107b75001ea8767ea3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>84eb30f9db75a410f69e1dcd139619d3</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:48</sys_updated_on>
+        <ui_id>1c1c8bde-290a-4e80-8b16-87a0370ba64e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=84eb30f9db75a410f69e1dcd139619d3"/>
+    <sys_element_mapping action="delete_multiple" query="id=84eb30f9db75a410f69e1dcd139619d3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zip_file</field>
+        <id>84eb30f9db75a410f69e1dcd139619d3</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>88eb30f9db75a410f69e1dcd139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:01:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2146312a0f9950107b75001ea8767ea3</table>
+        <value>{{d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Append to Delimited File">368972860f5150107b75001ea8767ebc</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>368972860f5150107b75001ea8767ebc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>4</order>
+        <parent_ui_id>e900994d-27a6-4873-8c22-9795e5ed7d5d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>88eaf0b9db75a410f69e1dcd13961934</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>c15b4a3a-f362-4a5d-b16f-bdb553624372</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=88eaf0b9db75a410f69e1dcd13961934"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>88eaf0b9db75a410f69e1dcd13961934</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>88eaf0b9db75a410f69e1dcd13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:14</sys_updated_on>
+        <value>557a6aed1b39641081a684c6cc4bcbfb</value>
+        <variable display_value="">3e8972860f5150107b75001ea8767ec3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=88eaf0b9db75a410f69e1dcd13961934"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>88eaf0b9db75a410f69e1dcd13961934</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>08eaf0b9db75a410f69e1dcd13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value>Name={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.name}}^UniqueName={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.unique_name}}^Lines={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.lines}}^City={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.city}}^State={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.state}}^Country={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.country}}^PostalCode={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.postal_code}}^Phone={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.phone}}^Fax={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.fax}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>88eaf0b9db75a410f69e1dcd13961934</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>44eaf0b9db75a410f69e1dcd13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>schema</field>
+        <id>88eaf0b9db75a410f69e1dcd13961934</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:14</sys_created_on>
+        <sys_id>80eaf0b9db75a410f69e1dcd13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Build File">25444bca0f5150107b75001ea8767efe</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>25444bca0f5150107b75001ea8767efe</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>cceb30f9db75a410f69e1dcd1396199e</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>1cc770da-52ff-4da6-ac4b-7bd1f32934fa</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cceb30f9db75a410f69e1dcd1396199e"/>
+    <sys_element_mapping action="delete_multiple" query="id=cceb30f9db75a410f69e1dcd1396199e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>cceb30f9db75a410f69e1dcd1396199e</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:01:36</sys_created_on>
+        <sys_id>c0eb30f9db75a410f69e1dcd139619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:01:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_25444bca0f5150107b75001ea8767efe</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Begin File">19d0b0060f1150107b75001ea8767ec6</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>19d0b0060f1150107b75001ea8767ec6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>fbdaf0b9db75a410f69e1dcd1396191d</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:31:47</sys_updated_on>
+        <ui_id>5c2de104-8508-4dd0-879c-069d32df50e7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fbdaf0b9db75a410f69e1dcd1396191d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbdaf0b9db75a410f69e1dcd1396191d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>7fdaf0b9db75a410f69e1dcd13961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <value>Address.csv</value>
+        <variable display_value="">59d0b0060f1150107b75001ea8767ec7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fbdaf0b9db75a410f69e1dcd1396191d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>bbdaf0b9db75a410f69e1dcd13961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <value>557a6aed1b39641081a684c6cc4bcbfb</value>
+        <variable display_value="">59d0b0060f1150107b75001ea8767ed6</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=36587cf5db75a410f69e1dcd13961972^sys_idNOT IN8c4cf8f9db75a410f69e1dcd139619db,bbdaf0b9db75a410f69e1dcd13961929"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c44cf8f9db75a410f69e1dcd139619db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>attachment_id</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:03:14</sys_created_on>
+        <sys_id>8c4cf8f9db75a410f69e1dcd139619db</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:06</sys_updated_on>
+        <ui_id>ed1f7858-d257-4a93-9f1b-782abc72e2ef</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8c4cf8f9db75a410f69e1dcd139619db"/>
+    <sys_element_mapping action="delete_multiple" query="id=8c4cf8f9db75a410f69e1dcd139619db"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>8c4cf8f9db75a410f69e1dcd139619db</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:03:14</sys_created_on>
+        <sys_id>c44cf8f9db75a410f69e1dcd139619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:03:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_36587cf5db75a410f69e1dcd13961972</table>
+        <value>{{1c1c8bde-290a-4e80-8b16-87a0370ba64e.zip_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7fdaf0b9db75a410f69e1dcd13961928</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>bbdaf0b9db75a410f69e1dcd13961929</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:06</sys_updated_on>
+        <ui_id>e900994d-27a6-4873-8c22-9795e5ed7d5d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bbdaf0b9db75a410f69e1dcd13961929"/>
+    <sys_element_mapping action="delete_multiple" query="id=bbdaf0b9db75a410f69e1dcd13961929"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>bbdaf0b9db75a410f69e1dcd13961929</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>cceaf0b9db75a410f69e1dcd1396192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{e0b528d0-0163-4560-963a-293f193cec64.Records}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_36587cf5db75a410f69e1dcd13961972^sys_idNOT IN77daf0b9db75a410f69e1dcd13961907"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment_id</element>
+        <help/>
+        <hint/>
+        <label>Zip Attachment ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_36587cf5db75a410f69e1dcd13961972</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 17:57:13</sys_created_on>
+        <sys_id>77daf0b9db75a410f69e1dcd13961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 17:57:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=36587cf5db75a410f69e1dcd13961972^sys_idNOT INc20c74f9db75a410f69e1dcd139619ca"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"c20c74f9db75a410f69e1dcd139619ca","name":"plan"}}</plan>
+        <plan_id display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</plan_id>
+        <snapshot>e23e19fddbf5a410f69e1dcd1396195b</snapshot>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c20c74f9db75a410f69e1dcd139619ca</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:05</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_address_zip</internal_name>
+        <label_cache>[{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.fax","label":"3➛Address Record➛Fax","reference":"","reference_display":"Fax","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"fax"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.phone","label":"3➛Address Record➛Phone","reference":"","reference_display":"Phone","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"phone"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.postal_code","label":"3➛Address Record➛Postal Code","reference":"","reference_display":"Postal Code","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"postal_code"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.country","label":"3➛Address Record➛Country","reference":"","reference_display":"Country","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"country"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.state","label":"3➛Address Record➛State","reference":"","reference_display":"State","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"state"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.city","label":"3➛Address Record➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"city"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.lines","label":"3➛Address Record➛Lines","reference":"","reference_display":"Lines","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"lines"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.unique_name","label":"3➛Address Record➛Unique Name","reference":"","reference_display":"Unique Name","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"unique_name"},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item.name","label":"3➛Address Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_snc_hcl_demo_address","column_name":"name"},{"name":"c15b4a3a-f362-4a5d-b16f-bdb553624372.file_line","label":"4➛File Line","reference":"sn_utility_spoke_file_line","reference_display":"File Line","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"277c904f-4ac6-4fc8-b9d4-4d59e73bf9b2"}},{"name":"e900994d-27a6-4873-8c22-9795e5ed7d5d.item","label":"3➛Address Record","reference":"x_snc_hcl_demo_address","reference_display":"Address","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e0b528d0-0163-4560-963a-293f193cec64.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e0b528d0-0163-4560-963a-293f193cec64.Table","label":"2➛Address Table","reference":"x_snc_hcl_demo_address","reference_display":"Address","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e0b528d0-0163-4560-963a-293f193cec64.Records","label":"2➛Address Records","reference":"x_snc_hcl_demo_address","reference_display":"Address","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c2de104-8508-4dd0-879c-069d32df50e7.file","label":"1➛File","reference":"sn_utility_spoke_file","reference_display":"File","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"191a1553-dd8a-48aa-8242-b960d789516a"}},{"name":"1cc770da-52ff-4da6-ac4b-7bd1f32934fa.file_attachment_id","label":"5➛File Attachment ID","reference_display":"File Attachment ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e25bc0f5-2759-4f15-b476-94f3722d938b"}},{"name":"1cc770da-52ff-4da6-ac4b-7bd1f32934fa.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"18982989-7896-40d2-b051-1b188d9f7542"}},{"name":"1cc770da-52ff-4da6-ac4b-7bd1f32934fa.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5eea177a-8d19-4a66-adfa-5c2c95c6094b"}},{"name":"d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file","label":"6➛Zip File","reference":"sn_utility_spoke_file_set","reference_display":"File Set","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c111f96f-ee04-42c7-8fde-a7e4c5b9d742"}},{"name":"1c1c8bde-290a-4e80-8b16-87a0370ba64e.zip_sys_id","label":"8➛Zip Attachment Sys ID","reference_display":"Zip Attachment Sys ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6e3ba717-6ac4-4692-856e-658e45d2e75f"}},{"name":"1c1c8bde-290a-4e80-8b16-87a0370ba64e.status","label":"8➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"86620c20-8215-4496-ae7c-4c8368f09487"}},{"name":"1c1c8bde-290a-4e80-8b16-87a0370ba64e.error_message","label":"8➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"907ab522-66d6-4435-9607-765998e279d2"}}]</label_cache>
+        <master>true</master>
+        <name>Create Address Zip</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create Address Zip">36587cf5db75a410f69e1dcd13961972</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4d0c34f9db75a410f69e1dcd13961975</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=4d0c34f9db75a410f69e1dcd13961975"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4d0c34f9db75a410f69e1dcd13961975"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=4d0c34f9db75a410f69e1dcd13961975^sys_idNOT IN190c34f9db75a410f69e1dcd139619ef,1d0c34f9db75a410f69e1dcd139619e2,550c74f9db75a410f69e1dcd13961915,6d0c74f9db75a410f69e1dcd1396191d,990c34f9db75a410f69e1dcd139619f8,9d0c74f9db75a410f69e1dcd13961903,d90c74f9db75a410f69e1dcd1396190c,e90c74f9db75a410f69e1dcd1396192d,ed4c7cf9db75a410f69e1dcd13961994"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Begin File">19d0b0060f1150107b75001ea8767ec6</action_type>
+        <action_type_parent display_value="Begin File">5d3fa8820f1150107b75001ea8767eb5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>19d0b0060f1150107b75001ea8767ec6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>190c34f9db75a410f69e1dcd139619ef</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:01</sys_updated_on>
+        <ui_id>5c2de104-8508-4dd0-879c-069d32df50e7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=190c34f9db75a410f69e1dcd139619ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>190c34f9db75a410f69e1dcd139619ef</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>510c34f9db75a410f69e1dcd139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>Address.csv</value>
+        <variable display_value="">59d0b0060f1150107b75001ea8767ec7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>190c34f9db75a410f69e1dcd139619ef</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>9d0c34f9db75a410f69e1dcd139619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>557a6aed1b39641081a684c6cc4bcbfb</value>
+        <variable display_value="">59d0b0060f1150107b75001ea8767ed6</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7fdaf0b9db75a410f69e1dcd13961928</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>1d0c34f9db75a410f69e1dcd139619e2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:01</sys_updated_on>
+        <ui_id>e900994d-27a6-4873-8c22-9795e5ed7d5d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1d0c34f9db75a410f69e1dcd139619e2"/>
+    <sys_element_mapping action="delete_multiple" query="id=1d0c34f9db75a410f69e1dcd139619e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>1d0c34f9db75a410f69e1dcd139619e2</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>d50c34f9db75a410f69e1dcd139619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{e0b528d0-0163-4560-963a-293f193cec64.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Begin Zip">c1993d960f9550107b75001ea8767ebd</action_type>
+        <action_type_parent display_value="Begin Zip">95a7f9560f9550107b75001ea8767eba</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1993d960f9550107b75001ea8767ebd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>550c74f9db75a410f69e1dcd13961915</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=550c74f9db75a410f69e1dcd13961915"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>550c74f9db75a410f69e1dcd13961915</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>250c74f9db75a410f69e1dcd13961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>Address.zip</value>
+        <variable display_value="">05993d960f9550107b75001ea8767ebe</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Add File to Zip">ed77ca5e0f9550107b75001ea8767ec3</action_type>
+        <action_type_parent display_value="Add File to Zip">664ff5960f9550107b75001ea8767ef4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ed77ca5e0f9550107b75001ea8767ec3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>6d0c74f9db75a410f69e1dcd1396191d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>2c7fd8ea-8355-4afa-b482-ecfa07c6731a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6d0c74f9db75a410f69e1dcd1396191d"/>
+    <sys_element_mapping action="delete_multiple" query="id=6d0c74f9db75a410f69e1dcd1396191d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>6d0c74f9db75a410f69e1dcd1396191d</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>ed0c74f9db75a410f69e1dcd1396191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ed77ca5e0f9550107b75001ea8767ec3</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zip_file</field>
+        <id>6d0c74f9db75a410f69e1dcd1396191d</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>2d0c74f9db75a410f69e1dcd1396191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ed77ca5e0f9550107b75001ea8767ec3</table>
+        <value>{{d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>990c34f9db75a410f69e1dcd139619f8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:01</sys_updated_on>
+        <ui_id>e0b528d0-0163-4560-963a-293f193cec64</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=990c34f9db75a410f69e1dcd139619f8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>990c34f9db75a410f69e1dcd139619f8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>510c34f9db75a410f69e1dcd139619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>x_snc_hcl_demo_address</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Append to Delimited File">368972860f5150107b75001ea8767ebc</action_type>
+        <action_type_parent display_value="Append to Delimited File">d496ba820f5150107b75001ea8767e02</action_type_parent>
+        <comment/>
+        <compiled_snapshot>368972860f5150107b75001ea8767ebc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>4</order>
+        <parent_ui_id>e900994d-27a6-4873-8c22-9795e5ed7d5d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>9d0c74f9db75a410f69e1dcd13961903</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>c15b4a3a-f362-4a5d-b16f-bdb553624372</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9d0c74f9db75a410f69e1dcd13961903"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9d0c74f9db75a410f69e1dcd13961903</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>d50c74f9db75a410f69e1dcd13961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>557a6aed1b39641081a684c6cc4bcbfb</value>
+        <variable display_value="">3e8972860f5150107b75001ea8767ec3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9d0c74f9db75a410f69e1dcd13961903"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>9d0c74f9db75a410f69e1dcd13961903</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>550c74f9db75a410f69e1dcd13961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value>Name={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.name}}^UniqueName={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.unique_name}}^Lines={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.lines}}^City={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.city}}^State={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.state}}^Country={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.country}}^PostalCode={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.postal_code}}^Phone={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.phone}}^Fax={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.fax}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>9d0c74f9db75a410f69e1dcd13961903</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>910c74f9db75a410f69e1dcd13961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>schema</field>
+        <id>9d0c74f9db75a410f69e1dcd13961903</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>dd0c74f9db75a410f69e1dcd13961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Build File">25444bca0f5150107b75001ea8767efe</action_type>
+        <action_type_parent display_value="Build File">31300b4a0f5150107b75001ea8767e22</action_type_parent>
+        <comment/>
+        <compiled_snapshot>25444bca0f5150107b75001ea8767efe</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>d90c74f9db75a410f69e1dcd1396190c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>1cc770da-52ff-4da6-ac4b-7bd1f32934fa</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d90c74f9db75a410f69e1dcd1396190c"/>
+    <sys_element_mapping action="delete_multiple" query="id=d90c74f9db75a410f69e1dcd1396190c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>d90c74f9db75a410f69e1dcd1396190c</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>190c74f9db75a410f69e1dcd1396190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_25444bca0f5150107b75001ea8767efe</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Build Zip">2146312a0f9950107b75001ea8767ea3</action_type>
+        <action_type_parent display_value="Build Zip">57207d260f9950107b75001ea8767ede</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2146312a0f9950107b75001ea8767ea3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>e90c74f9db75a410f69e1dcd1396192d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>1c1c8bde-290a-4e80-8b16-87a0370ba64e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e90c74f9db75a410f69e1dcd1396192d"/>
+    <sys_element_mapping action="delete_multiple" query="id=e90c74f9db75a410f69e1dcd1396192d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zip_file</field>
+        <id>e90c74f9db75a410f69e1dcd1396192d</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>290c74f9db75a410f69e1dcd1396192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2146312a0f9950107b75001ea8767ea3</table>
+        <value>{{d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c44cf8f9db75a410f69e1dcd139619db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>attachment_id</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:03:20</sys_created_on>
+        <sys_id>ed4c7cf9db75a410f69e1dcd13961994</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>ed1f7858-d257-4a93-9f1b-782abc72e2ef</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ed4c7cf9db75a410f69e1dcd13961994"/>
+    <sys_element_mapping action="delete_multiple" query="id=ed4c7cf9db75a410f69e1dcd13961994"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>ed4c7cf9db75a410f69e1dcd13961994</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:03:20</sys_created_on>
+        <sys_id>294c7cf9db75a410f69e1dcd139619b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:03:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_4d0c34f9db75a410f69e1dcd13961975</table>
+        <value>{{1c1c8bde-290a-4e80-8b16-87a0370ba64e.zip_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4d0c34f9db75a410f69e1dcd13961975^sys_idNOT IN010c34f9db75a410f69e1dcd13961977"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4d0c34f9db75a410f69e1dcd13961975</id>
+        <name>Create Address Zip</name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:13</sys_created_on>
+        <sys_id>010c34f9db75a410f69e1dcd13961977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_output action="delete_multiple" query="model=4d0c34f9db75a410f69e1dcd13961975^sys_idNOT IN4d0c34f9db75a410f69e1dcd13961978"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3010b47f-dd17-418f-b4d9-66dcf27ba3e9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Zip Attachment ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</model>
+        <model_id>4d0c34f9db75a410f69e1dcd13961975</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_4d0c34f9db75a410f69e1dcd13961975</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:13</sys_created_on>
+        <sys_id>4d0c34f9db75a410f69e1dcd13961978</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=4d0c34f9db75a410f69e1dcd13961975^sys_idNOT IN190c34f9db75a410f69e1dcd139619ef,550c74f9db75a410f69e1dcd13961915,6d0c74f9db75a410f69e1dcd1396191d,990c34f9db75a410f69e1dcd139619f8,9d0c74f9db75a410f69e1dcd13961903,d90c74f9db75a410f69e1dcd1396190c,e90c74f9db75a410f69e1dcd1396192d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Begin File">19d0b0060f1150107b75001ea8767ec6</action_type>
+        <action_type_parent display_value="Begin File">5d3fa8820f1150107b75001ea8767eb5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>19d0b0060f1150107b75001ea8767ec6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>190c34f9db75a410f69e1dcd139619ef</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:01</sys_updated_on>
+        <ui_id>5c2de104-8508-4dd0-879c-069d32df50e7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=190c34f9db75a410f69e1dcd139619ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>190c34f9db75a410f69e1dcd139619ef</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>510c34f9db75a410f69e1dcd139619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>Address.csv</value>
+        <variable display_value="">59d0b0060f1150107b75001ea8767ec7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>190c34f9db75a410f69e1dcd139619ef</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>9d0c34f9db75a410f69e1dcd139619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>557a6aed1b39641081a684c6cc4bcbfb</value>
+        <variable display_value="">59d0b0060f1150107b75001ea8767ed6</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Begin Zip">c1993d960f9550107b75001ea8767ebd</action_type>
+        <action_type_parent display_value="Begin Zip">95a7f9560f9550107b75001ea8767eba</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1993d960f9550107b75001ea8767ebd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>550c74f9db75a410f69e1dcd13961915</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=550c74f9db75a410f69e1dcd13961915"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>550c74f9db75a410f69e1dcd13961915</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>250c74f9db75a410f69e1dcd13961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>Address.zip</value>
+        <variable display_value="">05993d960f9550107b75001ea8767ebe</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Add File to Zip">ed77ca5e0f9550107b75001ea8767ec3</action_type>
+        <action_type_parent display_value="Add File to Zip">664ff5960f9550107b75001ea8767ef4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ed77ca5e0f9550107b75001ea8767ec3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>6d0c74f9db75a410f69e1dcd1396191d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>2c7fd8ea-8355-4afa-b482-ecfa07c6731a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6d0c74f9db75a410f69e1dcd1396191d"/>
+    <sys_element_mapping action="delete_multiple" query="id=6d0c74f9db75a410f69e1dcd1396191d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>6d0c74f9db75a410f69e1dcd1396191d</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>ed0c74f9db75a410f69e1dcd1396191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ed77ca5e0f9550107b75001ea8767ec3</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zip_file</field>
+        <id>6d0c74f9db75a410f69e1dcd1396191d</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>2d0c74f9db75a410f69e1dcd1396191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ed77ca5e0f9550107b75001ea8767ec3</table>
+        <value>{{d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>990c34f9db75a410f69e1dcd139619f8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:01</sys_updated_on>
+        <ui_id>e0b528d0-0163-4560-963a-293f193cec64</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=990c34f9db75a410f69e1dcd139619f8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>990c34f9db75a410f69e1dcd139619f8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>510c34f9db75a410f69e1dcd139619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>x_snc_hcl_demo_address</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Append to Delimited File">368972860f5150107b75001ea8767ebc</action_type>
+        <action_type_parent display_value="Append to Delimited File">d496ba820f5150107b75001ea8767e02</action_type_parent>
+        <comment/>
+        <compiled_snapshot>368972860f5150107b75001ea8767ebc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>4</order>
+        <parent_ui_id>e900994d-27a6-4873-8c22-9795e5ed7d5d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>9d0c74f9db75a410f69e1dcd13961903</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>c15b4a3a-f362-4a5d-b16f-bdb553624372</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9d0c74f9db75a410f69e1dcd13961903"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9d0c74f9db75a410f69e1dcd13961903</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>d50c74f9db75a410f69e1dcd13961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <value>557a6aed1b39641081a684c6cc4bcbfb</value>
+        <variable display_value="">3e8972860f5150107b75001ea8767ec3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9d0c74f9db75a410f69e1dcd13961903"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>9d0c74f9db75a410f69e1dcd13961903</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>550c74f9db75a410f69e1dcd13961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value>Name={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.name}}^UniqueName={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.unique_name}}^Lines={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.lines}}^City={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.city}}^State={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.state}}^Country={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.country}}^PostalCode={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.postal_code}}^Phone={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.phone}}^Fax={{e900994d-27a6-4873-8c22-9795e5ed7d5d.item.fax}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>9d0c74f9db75a410f69e1dcd13961903</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>910c74f9db75a410f69e1dcd13961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>schema</field>
+        <id>9d0c74f9db75a410f69e1dcd13961903</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>dd0c74f9db75a410f69e1dcd13961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_368972860f5150107b75001ea8767ebc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Build File">25444bca0f5150107b75001ea8767efe</action_type>
+        <action_type_parent display_value="Build File">31300b4a0f5150107b75001ea8767e22</action_type_parent>
+        <comment/>
+        <compiled_snapshot>25444bca0f5150107b75001ea8767efe</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>d90c74f9db75a410f69e1dcd1396190c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>1cc770da-52ff-4da6-ac4b-7bd1f32934fa</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d90c74f9db75a410f69e1dcd1396190c"/>
+    <sys_element_mapping action="delete_multiple" query="id=d90c74f9db75a410f69e1dcd1396190c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>d90c74f9db75a410f69e1dcd1396190c</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>190c74f9db75a410f69e1dcd1396190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_25444bca0f5150107b75001ea8767efe</table>
+        <value>{{5c2de104-8508-4dd0-879c-069d32df50e7.file}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Build Zip">2146312a0f9950107b75001ea8767ea3</action_type>
+        <action_type_parent display_value="Build Zip">57207d260f9950107b75001ea8767ede</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2146312a0f9950107b75001ea8767ea3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>e90c74f9db75a410f69e1dcd1396192d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>1c1c8bde-290a-4e80-8b16-87a0370ba64e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e90c74f9db75a410f69e1dcd1396192d"/>
+    <sys_element_mapping action="delete_multiple" query="id=e90c74f9db75a410f69e1dcd1396192d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zip_file</field>
+        <id>e90c74f9db75a410f69e1dcd1396192d</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:15</sys_created_on>
+        <sys_id>290c74f9db75a410f69e1dcd1396192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2146312a0f9950107b75001ea8767ea3</table>
+        <value>{{d3fa5ed7-4c93-42c8-bf3b-b9e05aeda23e.zip_file}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=4d0c34f9db75a410f69e1dcd13961975^sys_idNOT IN1d0c34f9db75a410f69e1dcd139619e2,ed4c7cf9db75a410f69e1dcd13961994"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7fdaf0b9db75a410f69e1dcd13961928</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>1d0c34f9db75a410f69e1dcd139619e2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:01</sys_updated_on>
+        <ui_id>e900994d-27a6-4873-8c22-9795e5ed7d5d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1d0c34f9db75a410f69e1dcd139619e2"/>
+    <sys_element_mapping action="delete_multiple" query="id=1d0c34f9db75a410f69e1dcd139619e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>1d0c34f9db75a410f69e1dcd139619e2</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>d50c34f9db75a410f69e1dcd139619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{e0b528d0-0163-4560-963a-293f193cec64.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c44cf8f9db75a410f69e1dcd139619db</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Address Zip">4d0c34f9db75a410f69e1dcd13961975</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>attachment_id</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:03:20</sys_created_on>
+        <sys_id>ed4c7cf9db75a410f69e1dcd13961994</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 20:14:02</sys_updated_on>
+        <ui_id>ed1f7858-d257-4a93-9f1b-782abc72e2ef</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ed4c7cf9db75a410f69e1dcd13961994"/>
+    <sys_element_mapping action="delete_multiple" query="id=ed4c7cf9db75a410f69e1dcd13961994"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>ed4c7cf9db75a410f69e1dcd13961994</id>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:03:20</sys_created_on>
+        <sys_id>294c7cf9db75a410f69e1dcd139619b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:03:20</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_4d0c34f9db75a410f69e1dcd13961975</table>
+        <value>{{1c1c8bde-290a-4e80-8b16-87a0370ba64e.zip_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4d0c34f9db75a410f69e1dcd13961975^sys_idNOT INdd0c34f9db75a410f69e1dcd139619dc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment_id</element>
+        <help/>
+        <hint/>
+        <label>Zip Attachment ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_4d0c34f9db75a410f69e1dcd13961975</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-19 18:02:14</sys_created_on>
+        <sys_id>dd0c34f9db75a410f69e1dcd139619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-19 18:02:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

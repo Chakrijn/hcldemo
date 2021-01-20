@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="HCL Task" max_length="40" name="x_snc_hcl_demo_hcl_tasks" type="collection">
+        <element label="HCL Task Type" max_length="100" name="hcl_task_type" type="string"/>
+        <element dependent="related_record_table" dependent_on_field="related_record_table" label="Related Record" max_length="32" name="related_record" type="document_id" use_dependent_field="true"/>
+        <element label="Related Record Table" max_length="40" name="related_record_table" type="string"/>
+    </element>
+</database>

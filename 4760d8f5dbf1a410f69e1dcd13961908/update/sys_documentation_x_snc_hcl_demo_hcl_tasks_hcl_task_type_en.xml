@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="hcl_task_type" label="HCL Task Type" language="en" table="x_snc_hcl_demo_hcl_tasks">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>hcl_task_type</element>
+            <help/>
+            <hint/>
+            <label>HCL Task Type</label>
+            <language>en</language>
+            <name>x_snc_hcl_demo_hcl_tasks</name>
+            <plural>HCL Task Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>abhijith.mergu@snc</sys_created_by>
+            <sys_created_on>2021-01-19 17:05:50</sys_created_on>
+            <sys_id>131fe831db75a410f69e1dcd139619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>HCL Task Type</sys_name>
+            <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_hcl_demo_hcl_tasks_hcl_task_type_en</sys_update_name>
+            <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+            <sys_updated_on>2021-01-19 17:05:50</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

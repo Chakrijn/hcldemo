@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="lines" label="Lines" language="en" table="x_snc_hcl_demo_address">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>lines</element>
+            <help/>
+            <hint/>
+            <label>Lines</label>
+            <language>en</language>
+            <name>x_snc_hcl_demo_address</name>
+            <plural>Lines</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>abhijith.mergu@snc</sys_created_by>
+            <sys_created_on>2021-01-19 15:14:29</sys_created_on>
+            <sys_id>cca5d03ddbf1a410f69e1dcd1396193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Lines</sys_name>
+            <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_hcl_demo_address_lines_en</sys_update_name>
+            <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+            <sys_updated_on>2021-01-19 15:14:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

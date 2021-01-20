@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Address Import Set" max_length="40" name="x_snc_hcl_demo_address_import_set" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=City" label="City" max_length="40" name="u_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Country" label="Country" max_length="40" name="u_country" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Fax" label="Fax" max_length="40" name="u_fax" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Lines" label="Lines" max_length="40" name="u_lines" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Phone" label="Phone" max_length="40" name="u_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=PostalCode" label="PostalCode" max_length="40" name="u_postalcode" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=UniqueName" label="UniqueName" max_length="40" name="u_uniquename" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="UTF-8" max_length="40" name="u_utf_8" type="string"/>
+    </element>
+</database>

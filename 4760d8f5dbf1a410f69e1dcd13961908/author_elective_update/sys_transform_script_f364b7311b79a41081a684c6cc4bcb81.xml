@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="DELETE">
+        <active>true</active>
+        <map display_value="Imported Addresses Ariba">220377fd1b39a41081a684c6cc4bcb96</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	// Add your code here
+	target.record_source = "imported";
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-20 07:28:21</sys_created_on>
+        <sys_id>f364b7311b79a41081a684c6cc4bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onStart</sys_name>
+        <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_update_name>sys_transform_script_f364b7311b79a41081a684c6cc4bcb81</sys_update_name>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-20 07:28:21</sys_updated_on>
+        <when>onStart</when>
+    </sys_transform_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</application>
+        <file_path/>
+        <instance_id>b41bdec3db299c50601a11f8489619bc</instance_id>
+        <instance_name>emppulkitautoorl</instance_name>
+        <name>sys_transform_script_f364b7311b79a41081a684c6cc4bcb81</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_script"&gt;&lt;sys_transform_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;map display_value="Imported Addresses Ariba"&gt;220377fd1b39a41081a684c6cc4bcb96&lt;/map&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	// Add your code here
+	target.record_source = "imported";
+
+})(source, map, log, target);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_transform_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;abhijith.mergu@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-20 07:28:21&lt;/sys_created_on&gt;&lt;sys_id&gt;f364b7311b79a41081a684c6cc4bcb81&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;onStart&lt;/sys_name&gt;&lt;sys_package display_value="HCL Demo" source="x_snc_hcl_demo"&gt;4760d8f5dbf1a410f69e1dcd13961908&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="HCL Demo"&gt;4760d8f5dbf1a410f69e1dcd13961908&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_script_f364b7311b79a41081a684c6cc4bcb81&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;abhijith.mergu@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-20 07:28:21&lt;/sys_updated_on&gt;&lt;when&gt;onStart&lt;/when&gt;&lt;/sys_transform_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2031910266</payload_hash>
+        <record_name>onStart</record_name>
+        <reverted_from/>
+        <source>9b60d8f5dbf1a410f69e1dcd1396190a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-20 07:28:21</sys_created_on>
+        <sys_id>618473311b79a41081a684c6cc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1771eb1bf040000001</sys_recorded_at>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-20 07:28:21</sys_updated_on>
+        <type>Transform Script</type>
+        <update_guid>a98473319b79a4106d291b85767b66e4</update_guid>
+        <update_guid_history>a98473319b79a4106d291b85767b66e4:-2031910266</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>abhijith.mergu@snc</sys_created_by>
+        <sys_created_on>2021-01-20 07:34:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_script">sys_transform_script</sys_db_object>
+        <sys_id>0cd97bb3247945e880d19e60c56239c4</sys_id>
+        <sys_metadata>f364b7311b79a41081a684c6cc4bcb81</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onStart</sys_name>
+        <sys_package display_value="HCL Demo" source="x_snc_hcl_demo">4760d8f5dbf1a410f69e1dcd13961908</sys_package>
+        <sys_parent display_value="Imported Addresses Ariba">220377fd1b39a41081a684c6cc4bcb96</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="HCL Demo">4760d8f5dbf1a410f69e1dcd13961908</sys_scope>
+        <sys_scope_delete display_value="">1caf55848cea4c8e83b9657a84be6764</sys_scope_delete>
+        <sys_update_name>sys_transform_script_f364b7311b79a41081a684c6cc4bcb81</sys_update_name>
+        <sys_update_version display_value="sys_transform_script_f364b7311b79a41081a684c6cc4bcb81">618473311b79a41081a684c6cc4bcbe5</sys_update_version>
+        <sys_updated_by>abhijith.mergu@snc</sys_updated_by>
+        <sys_updated_on>2021-01-20 07:34:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
